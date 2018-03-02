@@ -1,3 +1,5 @@
+package ua.training;
+
 import java.util.Scanner;
 
 /**

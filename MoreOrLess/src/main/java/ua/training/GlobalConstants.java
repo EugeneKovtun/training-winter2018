@@ -1,3 +1,5 @@
+package ua.training;
+
 /**
  * Created by eugene on 24.07.17.
  */
