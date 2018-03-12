@@ -9,7 +9,6 @@ public class Record {
     private String comment;
     private Group group;
     private String phone;
-    private String secondPhone;
     private String email;
     private Address address;
     private Date creationDate= new Date();
@@ -17,8 +16,7 @@ public class Record {
 
     public Record(String surname, String name,
                   String nickname, String comment,
-                  Group group, String phone,
-                  String secondPhone, String email,
+                  Group group, String phone, String email,
                   Address address, Date creationDate,
                   Date lastChangeDate) {
         this.surname = surname;
@@ -27,7 +25,6 @@ public class Record {
         this.comment = comment;
         this.group = group;
         this.phone = phone;
-        this.secondPhone = secondPhone;
         this.email = email;
         this.address = address;
         this.creationDate = creationDate;
@@ -84,14 +81,6 @@ public class Record {
         this.phone = phone;
     }
 
-    public String getSecondPhone() {
-        return secondPhone;
-    }
-
-    public void setSecondPhone(String secondPhone) {
-        this.secondPhone = secondPhone;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -133,7 +122,6 @@ public class Record {
                 ", comment='" + comment + '\'' +
                 ", group=" + group +
                 ", phone='" + phone + '\'' +
-                ", secondPhone='" + secondPhone + '\'' +
                 ", email='" + email + '\'' +
                 ", address=" + address +
                 ", creationDate=" + creationDate +

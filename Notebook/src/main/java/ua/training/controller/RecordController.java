@@ -37,11 +37,20 @@ public class RecordController {
                         (view.getStringByBundle(View.KEY_INPUT),
                                 View.DELIMITER,view.getStringByBundle(View.KEY_COMMENT)),
                 Regex.COMMENT_REGEX);
-        
+        String phone = utils.inputStringWithScannerAndRegex(view.concatenateStrings
+                        (view.getStringByBundle(View.KEY_INPUT),
+                                View.DELIMITER,view.getStringByBundle(View.KEY_PHONE)),
+                Regex.MOBILE_PHONE_NUMBER_REGEX);
+        String email = utils.inputStringWithScannerAndRegex(view.concatenateStrings
+                        (view.getStringByBundle(View.KEY_INPUT),
+                                View.DELIMITER,view.getStringByBundle(View.KEY_EMAIL)),
+                Regex.EMAIL_REGEX);
         record.setName(name);
         record.setSurname(surname);
         record.setNickname(nickname);
         record.setComment(comment);
+        record.setPhone(phone);
+        record.setEmail(email);
         record.setLastChangeDate(new Date());
         return record;
     }
