@@ -34,6 +34,8 @@ public class Record {
         this.lastChangeDate = lastChangeDate;
     }
 
+    public Record() { }
+
     public String getSurname() {
         return surname;
     }
@@ -120,5 +122,22 @@ public class Record {
 
     public void setLastChangeDate(Date lastChangeDate) {
         this.lastChangeDate = lastChangeDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Record{" +
+                "surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", comment='" + comment + '\'' +
+                ", group=" + group +
+                ", phone='" + phone + '\'' +
+                ", secondPhone='" + secondPhone + '\'' +
+                ", email='" + email + '\'' +
+                ", address=" + address +
+                ", creationDate=" + creationDate +
+                ", lastChangeDate=" + lastChangeDate +
+                '}';
     }
 }
