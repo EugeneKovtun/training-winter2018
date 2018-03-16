@@ -4,6 +4,13 @@ import java.io.PrintStream;
 import java.util.Arrays;
 
 public class View {
+    public static final String INPUT = "Input";
+    public static final String PRODUCT_NAME = "product name";
+    public static final String MANUFACTURER = "manufacturer";
+    public static final String PROVIDER = "provider";
+    public static final String PROVIDER_PHONE = "provider phone";
+    public static final String WRONG_INPUT = "Wrong input, try again!";
+
     private PrintStream stream;
 
     public View(PrintStream stream) {

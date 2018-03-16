@@ -16,7 +16,7 @@ public class Model {
         this.products = products;
     }
 
-    public boolean add(Product product) {
-        return products.add(product);
+    public void add(Product product) {
+        products.add(product);
     }
 }
