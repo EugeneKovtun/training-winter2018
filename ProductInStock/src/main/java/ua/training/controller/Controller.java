@@ -24,7 +24,7 @@ public class Controller {
 
     private void addNewProduct() {
         Product product = new ProductController(view,scanner).getNewProduct();
-        model.add(new Product());
+        model.add(product);
     }
 
 }
